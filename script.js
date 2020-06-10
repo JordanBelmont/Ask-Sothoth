@@ -1,3 +1,7 @@
+var answer = document.getElementById("answer");
+var button = document.getElementById("button");
+var input = document.getElementById("input");
+
 let answers = [
    "Indubitably",
    "Yes, at a price",
@@ -18,3 +22,12 @@ let answers = [
    "I wouldn't hold my breath",
    "That's going to be a 'no'"
 ];
+
+button.addEventListener("click", function () {
+   if (input.value.length < 1) {
+      alert("Please enter a question!");
+   } else {
+      let num = input.value.length % answers.length;
+      answer.innerText = answers[num];
+   }
+});
