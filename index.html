@@ -9,7 +9,7 @@
 
    <link rel='stylesheet' href='css/style.css'>
    <link rel='apple-touch-icon' href='apple-touch-icon.png'>
-   <script defer src='index.js'></script>
+   <script defer src='script.js'></script>
 
    <title>Ask-Sothoth</title>
 </head>
@@ -17,7 +17,10 @@
 <body>
 
    <img>
-   <input type="text" placeholder="enter your question" id="input" class="input" />
+   <div class="input-container">
+      <input type="text" placeholder="enter your question" id="input" class="input" />
+   </div>
+   
    <button id="button" class="button">Ask</button>
 
    <div class="ask-sothoth-container">
@@ -27,7 +30,7 @@
    </div>
 
    <p id="answer" class="answer"></p>
-   
+
 </body>
 
 <footer>
