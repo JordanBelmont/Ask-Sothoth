@@ -1,0 +1,6 @@
+.test {
+   display: grid;
+   grid-template: 'pic title' 'pic input' 'pic button' 'pic answer' / 1fr 1fr;
+   min-height: 100vh;
+   justify-items: center;
+}
