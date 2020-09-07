@@ -1,2 +1,29 @@
-.input {
+.input-container {
+   position: relative;
+	/* background-color: rgb(148, 148, 148); */
+	/* padding: 1.125em 1.5em; */
+   border-radius: 1rem;
+   right: 50px;
+   top: 25px;
+   padding:10px;
+   border:2px solid;
+   margin:10px;
+}
+
+label {
+   position:absolute;
+   top: -25px;
+   left: 220px;
+   padding: 15px;
+   background-color:white;
+}
+
+
+input {
+   width: 40em;
+   text-align: center;
+   padding: 20px;
+   border: none;
+   border-radius: 1rem;
+   background-color: rgb(255, 255, 255);
 }
