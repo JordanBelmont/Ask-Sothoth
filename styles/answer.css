@@ -1,0 +1,15 @@
+.answer-container {
+   display: flex;
+   justify-content: center;
+   align-self: center;
+   text-align: center;
+   margin-right: 22%;
+}
+
+.answer {
+   font-family: 'mrsmonster';
+   letter-spacing: 2px;
+   font-size: 3vw;
+   padding: 45px;
+   width: 100%;
+}

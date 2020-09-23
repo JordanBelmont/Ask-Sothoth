@@ -1,23 +1,34 @@
 .slogan-container {
-align-self: end;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
 }
 
 .slogan-container p {
    font-family: 'mrsmonster';
    color: red;
-   font-size: 40px;
-   margin: 10px 50px 0px 10px;
-   line-height: 35px;
+   font-size: 2vw;
+   margin-top: 10px;
+   line-height: 40px;
+   letter-spacing: 1px;
 }
 
 span {
-   font-size: 60px;
+   font-size: 4vw;
+}
+
+.key {
+   text-indent: -65%;
+   margin-top: 30px;
 }
 
 .guardian {
-   text-indent: 40px;
+   text-indent: -20%;
+   /* margin-right: 10%; */
 }
 
 .gate {
-   text-indent: 80px;
+   text-indent: 0%;
+   /* margin-right: 10%; */
 }

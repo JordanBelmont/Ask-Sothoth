@@ -1,7 +1,6 @@
-var answer = document.getElementById("answer");
-var button = document.getElementById("button");
-var input = document.getElementById("input");
+// ! ANSWERS
 
+const store = {}
 let answers = [
    "Indubitably",
    "Yes, at a price",
@@ -9,12 +8,12 @@ let answers = [
    "Oh why not, I'm feeling generous",
    "By the Plateaus of Leng, it shall be so",
    "I'll allow it",
-   "Ask nicer",
-   "Pointless questions relinquish pointless answers",
+   "Ask nicely",
+   "Pointless questions beget pointless answers",
    "You not knowing is half my fun",
-   "Limitless knowledge, and you waste it with this?",
+   "Don't waste our time",
    "Some things are best left a mystery",
-   "I could tell you, but then I'd have to kill you",
+   "Your mind couldn't possibly comprehend",
    "Not today, mortal",
    "It will never come to pass",
    "I think not",
@@ -23,11 +22,20 @@ let answers = [
    "That's going to be a 'no'"
 ];
 
-button.addEventListener("click", function () {
+document.getElementById('form').addEventListener('submit', function () {
+   let question = document.getElementById("input").value
    if (input.value.length < 1) {
-      alert("Please enter a question!");
+      alert("Enter a question");
+      return;
+   } if (question.indexOf("?") != -1) {
+      const number = store[question] || Math.floor(Math.random() * 15)
+      store[question] = number
+      event.preventDefault();
+      document.getElementById("answer").textContent = answers[number]
    } else {
-      let num = input.value.length % answers.length;
-      answer.innerText = answers[num];
+      alert("Use a question mark at the end of the question")
+      event.preventDefault();
    }
 });
+
+

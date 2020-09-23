@@ -1,7 +1,6 @@
 .title {
-   width: 55%;
-   height: 30%;
+   width: 50%;
+   top: 20px;
+   right: 130px;
    position: absolute;
-   top: 10px;
-   right: 60px;
 }

@@ -15,30 +15,29 @@
 </head>
 
 <body>
-   <div class="test">
-      <picture>
-         <img src="images/Ask-Sathoth.png" alt="the sigil of Yog-Sothoth" class="ask-sothoth"/>
+   <div class="grid">
+      <picture class="image-container w-1 h-4">
+         <img src="images/Ask-Sathoth.png" alt="the sigil of Yog-Sothoth" class="ask-sothoth" />
       </picture>
 
       <div class="title-container">
-         <img src="images/title.png" alt="Ask-Sothoth title" class="title"/>
+         <img src="images/title.png" alt="Ask-Sothoth title" class="title" />
       </div>
 
       <div class="slogan-container">
-         <p class="key">The <span>KEY</span>,</p>
+         <p class="key">The <span>KEY,</span></p>
          <p class="guardian"><span>GUARDIAN,</span> and</p>
          <p class="gate"><span>GATE</span> to knowledge!</p>
       </div>
 
-      <div class="input-container">
-         <label>Ask Your Question</label>
-         <input type="text" id="input" class="input"/>
+      <form id="form">
+            <input type="text" name="question" id="input" class="input" placeholder="Your Question"/>
+      </form>
+
+      <div class="answer-container">
+         <p id="answer" class="answer"></p>
       </div>
-      
-
-      <button id="button" class="button">Ask</button>
-
-      <p id="answer" class="answer"></p>
    </div>
 </body>
+
 </html>
