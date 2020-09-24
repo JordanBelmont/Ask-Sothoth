@@ -9,7 +9,13 @@
 .answer {
    font-family: 'mrsmonster';
    letter-spacing: 2px;
-   font-size: 3vw;
+   font-size: 3.5vw;
    padding: 45px;
    width: 100%;
+   pointer-events: none;
+}
+
+.answer::selection {
+   color: none;
+   background: none;
 }

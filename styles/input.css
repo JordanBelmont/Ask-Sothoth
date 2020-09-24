@@ -1,14 +1,14 @@
 form {
    display: flex;
-   align-items: center;
    justify-content: center;
    margin-right: 22%;
+   margin-top: 10px;
 }
 
 input {
    width: 90%;
-   font-size: 20px;
-   font-family: monospace;
+   font-size: 2vw;
+   font-family: 'coffee&tea';
    text-align: center;
    border-radius: 1px;
    border-radius: 1rem;
@@ -17,7 +17,7 @@ input {
    background-color: rgb(255, 255, 255);
    -webkit-transition: 0.5s;
    transition: 0.5s;
-   align-self: center;
+   align-self: flex-start;
 }
 
 input:focus {
@@ -25,6 +25,6 @@ input:focus {
 }
 
 input::placeholder {
-   font-family: 'meslo';
-   color: rgb(196, 118, 118);
+   font-family: 'coffee&tea';
+   color: rgb(179, 179, 179);
 }

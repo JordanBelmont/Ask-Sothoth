@@ -1,4 +1,4 @@
-// ! ANSWERS
+// ANSWERS INPUT
 
 const store = {}
 let answers = [
@@ -37,5 +37,16 @@ document.getElementById('form').addEventListener('submit', function () {
       event.preventDefault();
    }
 });
+
+// PREVENT NUMBER INPUT
+
+document.getElementById('form').onkeypress = function (e) {
+   e = e || window.event;
+   var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
+   var charStr = String.fromCharCode(charCode);
+   if (/\d/.test(charStr)) {
+      return false;
+   }
+};
 
 
