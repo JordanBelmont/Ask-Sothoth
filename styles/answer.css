@@ -1,5 +1,19 @@
 .answer-container {
    order: 5;
+   margin-top: 20px;
+}
+
+.answer {
+   font-family: 'mrsmonster';
+   pointer-events: none;
+   width: 100%;
+   text-align: center;
+   font-size: 8vw;
+}
+
+.answer::selection {
+   color: none;
+   background: none;
 }
 
 /* Desktop Screen Size */
@@ -7,24 +21,16 @@
 @media only screen and (min-width: 958px) {
 
    .answer-container {
+      order: 0;
       display: flex;
       justify-content: center;
-      align-self: center;
       text-align: center;
       margin-right: 22%;
    }
 
    .answer {
-      font-family: 'mrsmonster';
       letter-spacing: 2px;
       font-size: 4vw;
       padding: 45px;
-      width: 100%;
-      pointer-events: none;
-   }
-
-   .answer::selection {
-      color: none;
-      background: none;
    }
 }

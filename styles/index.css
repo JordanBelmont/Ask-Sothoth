@@ -6,6 +6,15 @@ html {
    box-sizing: inherit;
 }
 
+body {
+   margin: 10px 10px 10px 10px;
+}
+
+/* Desktop Screen Size */
+
+@media only screen and (min-width: 958px) {
+
    body {
       margin: 20px;
    }
+}
