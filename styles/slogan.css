@@ -1,38 +1,47 @@
 .slogan-container {
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
+   order: 3;
 }
 
-.slogan-container p {
-   font-family: 'ptsans';
-   color: red;
-   font-size: 2vw;
-   margin-top: 10px;
-   line-height: 3vw;
-   letter-spacing: 1px;
-   pointer-events: none;
-}
+/* Desktop Screen Size */
 
-.slogan-container ::selection {
-   color: none;
-   background: none;
-}
+@media only screen and (min-width: 958px) {
 
-span {
-   font-size: 4vw;
-}
+   .slogan-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+   }
 
-.key {
-   text-indent: -65%;
-   margin-top: 30px;
-}
+   .slogan-container p {
+      font-family: 'ptsans';
+      color: red;
+      font-size: 2vw;
+      margin-top: 10px;
+      line-height: 3vw;
+      letter-spacing: 1px;
+      pointer-events: none;
+   }
 
-.guardian {
-   text-indent: -20%;
-}
+   .slogan-container ::selection {
+      color: none;
+      background: none;
+   }
 
-.gate {
-   text-indent: 0%;
+   span {
+      font-size: 4vw;
+   }
+
+   .key {
+      text-indent: -65%;
+      margin-top: 30px;
+   }
+
+   .guardian {
+      text-indent: -20%;
+   }
+
+   .gate {
+      text-indent: 0%;
+   }
 }

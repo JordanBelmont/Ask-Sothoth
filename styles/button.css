@@ -1,25 +1,30 @@
-.button-container {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-right: 22%;
-}
+/* Desktop Screen Size */
 
-button {
-   background-color: #ffffff;
-   color: red;
-   padding: 15px 50px;
-   font-family: "mrsmonster";
-   font-size: 2vw;
-   cursor: pointer;
-   font-weight: bolder;
-   letter-spacing: 2px;
-   transition: 1s;
-}
+@media only screen and (min-width: 958px) {
 
-button:hover {
-   background-color: red;
-   color: white;
-   font-weight: bolder;
-   transition: 1s;
+   .button-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 22%;
+   }
+
+   button {
+      background-color: #ffffff;
+      color: red;
+      padding: 15px 50px;
+      font-family: "mrsmonster";
+      font-size: 2vw;
+      cursor: pointer;
+      font-weight: bolder;
+      letter-spacing: 2px;
+      transition: 1s;
+   }
+
+   button:hover {
+      background-color: red;
+      color: white;
+      font-weight: bolder;
+      transition: 1s;
+   }
 }

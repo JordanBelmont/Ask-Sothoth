@@ -1,6 +1,15 @@
-.title {
-   width: 50%;
-   top: 20px;
-   right: 130px;
-   position: absolute;
+.title-container {
+   order: 1;
+}
+
+/* Desktop Screen Size */
+
+@media only screen and (min-width: 958px) {
+
+   .title {
+      width: 50%;
+      top: 20px;
+      right: 130px;
+      position: absolute;
+   }
 }

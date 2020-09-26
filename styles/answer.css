@@ -1,21 +1,30 @@
 .answer-container {
-   display: flex;
-   justify-content: center;
-   align-self: center;
-   text-align: center;
-   margin-right: 22%;
+   order: 5;
 }
 
-.answer {
-   font-family: 'mrsmonster';
-   letter-spacing: 2px;
-   font-size: 3.5vw;
-   padding: 45px;
-   width: 100%;
-   pointer-events: none;
-}
+/* Desktop Screen Size */
 
-.answer::selection {
-   color: none;
-   background: none;
+@media only screen and (min-width: 958px) {
+
+   .answer-container {
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      text-align: center;
+      margin-right: 22%;
+   }
+
+   .answer {
+      font-family: 'mrsmonster';
+      letter-spacing: 2px;
+      font-size: 4vw;
+      padding: 45px;
+      width: 100%;
+      pointer-events: none;
+   }
+
+   .answer::selection {
+      color: none;
+      background: none;
+   }
 }

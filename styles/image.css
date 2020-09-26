@@ -1,10 +1,23 @@
+
 .image-container {
    text-align: center;
-   margin-top: 15px;
+   order: 2;
 }
 
 img {
-   width: 82%;
-   object-fit: contain;
+   width: 65%;
 }
+/* Desktop Screen Size */
 
+@media only screen and (min-width: 958px) {
+
+   .image-container {
+      text-align: center;
+      margin-top: 15px;
+   }
+
+   img {
+      width: 82%;
+      object-fit: contain;
+   }
+}
