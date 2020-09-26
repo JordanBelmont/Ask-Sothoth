@@ -1,5 +1,22 @@
 form {
    order: 4;
+   margin-top: 20px;
+   width: 75%;
+}
+
+input {
+   width: 100%;
+   font-size: 5vw;
+   font-family: 'coffee&tea';
+   text-align: center;
+   border-radius: 1px;
+   border-radius: 1rem;
+   padding: 5px;
+   border: 3px solid;
+   background-color: rgb(255, 255, 255);
+   -webkit-transition: 0.5s;
+   transition: 0.5s;
+   align-self: flex-start;
 }
 
 /* Desktop Screen Size */
@@ -7,6 +24,7 @@ form {
 @media only screen and (min-width: 958px) {
 
    form {
+      order: 0;
       display: flex;
       justify-content: center;
       margin-right: 22%;
@@ -16,15 +34,10 @@ form {
    input {
       width: 90%;
       font-size: 2vw;
-      font-family: 'coffee&tea';
-      text-align: center;
       border-radius: 1px;
       border-radius: 1rem;
       padding: 5px;
       border: 3px solid;
-      background-color: rgb(255, 255, 255);
-      -webkit-transition: 0.5s;
-      transition: 0.5s;
       align-self: flex-start;
    }
 

@@ -1,7 +1,6 @@
 .display {
    display: flex;
    flex-direction: column;
-   justify-content: space-between;
    align-items: center;
 }
 
@@ -11,7 +10,7 @@
    .display {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: 30% 28% 20% 10%;
+      grid-template-rows: 30% 28% 10% 32%;
    }
 
    .w-1 {

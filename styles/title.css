@@ -1,10 +1,20 @@
 .title-container {
    order: 1;
+   text-align: center;
+}
+
+.title {
+   width: 80%;
 }
 
 /* Desktop Screen Size */
 
 @media only screen and (min-width: 958px) {
+
+   .title-container {
+      order: 0;
+      text-align: center;
+   }
 
    .title {
       width: 50%;
