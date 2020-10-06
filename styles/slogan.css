@@ -8,11 +8,11 @@
 }
 
 .slogan-container p {
-   font-family: 'ptsans';
+   font-family: 'carosello';
    color: red;
    font-size: 5vw;
    margin-top: 10px;
-   line-height: 3.5vw;
+   line-height: 5vw;
    letter-spacing: 1px;
    pointer-events: none;
    width: 100%;
@@ -28,7 +28,7 @@ span {
 }
 
 .key {
-   text-indent: -55%;
+   text-indent: -45%;
 }
 
 .guardian {
@@ -36,7 +36,7 @@ span {
 }
 
 .gate {
-   text-indent: 25%;
+   text-indent: 15%;
 }
 
 /* Desktop Screen Size */
@@ -48,24 +48,24 @@ span {
    }
 
    .slogan-container p {
-      font-size: 2vw;
+      font-size: 3vw;
       line-height: 3vw;
    }
 
    span {
-      font-size: 3.5vw;
+      font-size: 4vw;
    }
    
    .key {
-      text-indent: -65%;
+      text-indent: -70%;
       margin-top: 30px;
    }
    
    .guardian {
-      text-indent: -20%;
+      text-indent: -30%;
    }
    
    .gate {
-      text-indent: 0%;
+      text-indent: -10%;
    }
 }
