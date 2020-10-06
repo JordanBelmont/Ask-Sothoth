@@ -1,5 +1,3 @@
-// ANSWERS INPUT
-
 const store = {}
 let answers = [
    "Indubitably",
@@ -22,7 +20,7 @@ let answers = [
    "That's going to be a 'no'"
 ];
 
-document.getElementById('form').addEventListener('submit', function () {
+document.getElementById('form').addEventListener('submit', function (event) {
    let question = document.getElementById("input").value
    if (input.value.length < 1) {
       alert("Enter a question");
@@ -40,13 +38,10 @@ document.getElementById('form').addEventListener('submit', function () {
 
 // PREVENT NUMBER INPUT
 
-document.getElementById('form').onkeypress = function (e) {
-   e = e || window.event;
-   var charCode = (typeof e.which == "undefined") ? e.keyCode : e.which;
-   var charStr = String.fromCharCode(charCode);
-   if (/\d/.test(charStr)) {
-      return false;
-   }
-};
+document.getElementById('form').addEventListener('keydown', e => {
+	if (e.key.match(/\d/)) {
+		e.preventDefault();
+	}
+})
 
 

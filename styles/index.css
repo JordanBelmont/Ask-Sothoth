@@ -15,6 +15,6 @@ body {
 @media only screen and (min-width: 958px) {
 
    body {
-      margin: 20px;
+      height: 95vh;
    }
 }
